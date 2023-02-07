@@ -8,11 +8,16 @@ async function getAPOD() {
     // Extract the image URL and description from the data
     const imageURL = data.url;
     const description = data.explanation;
+    const titleGalaxy = data.title; 
   
     // Update the header on the main page with the image and description
     const header = document.getElementById("header");
     header.style.backgroundImage = `url('${imageURL}')`;
     header.innerHTML = description;
+
+    //Update title
+    const title = document.getElementById("title");
+    title.innerHTML = titleGalaxy;
   }
   
   // Call the function to retrieve the data when the page loads
