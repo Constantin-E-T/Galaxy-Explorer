@@ -4,6 +4,9 @@ const apiUrl = 'https://mars.nasa.gov/rss/api/?feed=weather&category=insight_tem
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
+    console.log(data);
+
+    /* The sol_keys array contains the keys for each day's data. */
     const solKeys = data.sol_keys;
     let solIndex = 0;
 
@@ -11,12 +14,20 @@ fetch(apiUrl)
      * It takes the data from the API and displays it on the page
      */
     function displayWeatherData() {
+      // sol is the key for each day's data
       const sol = solKeys[solIndex];
+      // AT is the temperature data
       const temperatureData = data[sol].AT;
+      // HWS is the wind speed data
       const windData = data[sol].HWS;
+      // First_UTC is the first time the data was updated on the API in UTC
       const date = new Date(data[sol].First_UTC).toDateString();
+      // last_UTC is the last time the data was updated on the API in UTC
+      const lastUpdated = new Date(data[sol].Last_UTC).toDateString();
+
 
       document.getElementById('date').innerHTML = date;
+      document.getElementById('last-update-of-data').innerHTML = `Last Updated: ${lastUpdated}`;
       document.getElementById('temperature').innerHTML = `Min: ${temperatureData.mn} &#8451; Max: ${temperatureData.mx} &#8451;`;
       document.getElementById('wind').innerHTML = `Speed: ${windData.av} m/s`;
     }
