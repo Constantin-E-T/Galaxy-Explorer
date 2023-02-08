@@ -3,3 +3,22 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  figcaption {
+    background-color: gary;
+    color: #222;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
