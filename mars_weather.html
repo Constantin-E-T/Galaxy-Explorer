@@ -9,6 +9,7 @@
    <title>Mars Weather</title>
 </head>
 <body>
+  <!-- Nav bar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
        <a class="navbar-brand" href="#">Logo</a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +28,21 @@
        </div>
      </nav>
 
-    <section>
-      <span id="date"></span>
-      <span id="temperature"></span>
-      <span id="wind"></span>
- 
-      <button id="previous">previous</button>
-      <button id="next">next</button>
-    </section>
+     <!-- Card -->
+      <div class="card mx-auto" style="width: 40rem; height: 20rem; margin-top: 10rem;">
+        <div class="card-body">
+          <h4 class="card-title">Mars Weather</h4>
+          <h5>
+            <span id="date"></span>
+          </h5>
+          <p class="card-text">
+            <span id="temperature"></span>
+            <span id="wind"></span>
+          </p>
+          <button id="previous">previous</button>
+          <button id="next">next</button>
+        </div>
+      </div>
 
 
      
