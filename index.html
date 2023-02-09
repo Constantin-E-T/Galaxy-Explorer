@@ -10,7 +10,10 @@
 </head>
 <body>
     <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#"></a>
+        <div class="logo-image">
+          <img src="./nasa-logo-web-rgb.png">
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,10 +26,12 @@
             <li class="nav-item">
               <a class="nav-link" href="mars_weather.html">Mars Weather</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#funFact">Fun Fact</a>
+            </li>
           </ul>
         </div>
       </nav>
-      
       
       
       <div class="container jumbotron">
@@ -45,28 +50,37 @@
         <p class="lead mt-5">
             <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal">Learn more</a>
         </p>
+           <!-- Modal -->
+           <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
 
-        <!-- Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle">Description</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="modalBody">
                 <!-- The explanation retrieved from the API will be inserted here -->
             </div>
             </div>
         </div>
-        </div>
-
-        
+        </div> 
       </div>
+            <!-- Fun fact generator-->
+            <div class="embed-fungen">
+              <script src="https://fungenerators.com/extensions/embed/v1/fungen.js"></script>
+              </script> 
+              <script> FunGen.Embed.render( { context: 'random', toolId: 'facts/space/' } ); </script> 
+              <noscript>Please enable JavaScript to view the <a href="https://fungenerators.com/random/facts/space/"></a>
+              </noscript> 
+              <div id="funFact" class="light-text" style="text-decoration: none; color:#ccc; text-align: right; padding-right: 20px; margin-top: -20px;">
+                <a href="https://fungenerators.com/random/facts/space/" title="Powered by Random Space Facts generator from fungenerators.com" style="text-decoration: none; color:#ccc; "></a>
+              </div>
+            </div>
 
-      <footer class="text-center">Awesome group 3</footer>
+      <footer class="text-center">Constantin, Eleftheria, Floella & Kasia, 2023</footer>
     
 
 
