@@ -15,8 +15,12 @@
 
   }
 
+  .logo {
+max-width: 20%;
+padding-bottom: 4%;
+  }
+
   figcaption {
-    background-color: gary;
     color: #222;
     font: italic smaller sans-serif;
     padding: 3px;
