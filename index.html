@@ -9,63 +9,70 @@
     <title>Galaxy Explorer </title>
 </head>
 <body>
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Galaxy Explorer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- move the links on the right -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mars_weather.html">Mars Weather</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-      
-      
-      <div class="container jumbotron">
-        <!-- Container for the Bootstrap alert -->
-        <div id="alertContainer"></div>
-        <h1 class="display-4 text-center" id="title">Hello, world!</h1>
-        <p class="lead text-center date__img"></p>
-        <hr class="my-4">
-        <div id="header">
-            <figure>
-                <img id="header__image">
-                <figcaption id="header__caption"></figcaption>
-            </figure>
-        </div>
-        <!-- Modal Trigger -->
-        <p class="lead mt-5">
-            <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal">Learn more</a>
-        </p>
+    
+      <header>
+        <!-- Bootstrap navbar -->
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Galaxy Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- move the links on the right -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mars_weather.html">Mars Weather</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
 
-        <!-- Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle">Description</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="modalBody">
-                <!-- The explanation retrieved from the API will be inserted here -->
-            </div>
-            </div>
-        </div>
+      </header>
+      
+      <main>
+        <!-- Bootstrap jumbotron -->
+        <div class="container jumbotron">
+          <!-- Container for the Bootstrap alert -->
+          <div id="alertContainer"></div>
+          <h1 class="display-4 text-center" id="title">Hello, world!</h1>
+          <p class="lead text-center date__img"></p>
+          <hr class="my-4">
+          <div id="header">
+              <figure>
+                  <img id="header__image">
+                  <figcaption id="header__caption"></figcaption>
+              </figure>
+          </div>
+          <!-- Modal Trigger -->
+          <p class="lead mt-5">
+              <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal">Learn more</a>
+          </p>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitle">Description</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body" id="modalBody">
+                  <!-- The explanation retrieved from the API will be inserted here -->
+              </div>
+              </div>
+          </div>
+          </div>
+  
+          
         </div>
 
-        
-      </div>
+      </main>
 
       <footer class="text-center">Awesome group 3</footer>
     

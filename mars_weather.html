@@ -10,47 +10,44 @@
 </head>
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <a class="navbar-brand" href="#">Logo</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- move the links on the right -->
-         <ul class="navbar-nav ml-auto">
-           <li class="nav-item active">
-             <a class="nav-link" href="index.html">Home</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#">Mars Weather<span class="sr-only">(current)</span></a>
-           </li>
-           </ul>
-       </div>
-     </nav>
+    <header>
+        <!-- Bootstrap navbar -->
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+           <a class="navbar-brand" href="#">Logo</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- move the links on the right -->
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Mars Weather<span class="sr-only">(current)</span></a>
+               </li>
+               </ul>
+           </div>
+        </nav>
+    </header>
 
-     <div class="jumbotron">
-         
-        <h1 class="display-4"><span id="date"></span></h1>
-        
-        <p class="lead"><span id="temperature"></span></p>
-        <hr class="my-4">
-        <p><span id="wind"></span></p>
-        <p class="lead"><span id="last-update-of-data"></span></p>
-
-        <div class="col text-center">
-            <button class="btn btn-dark mr-5" id="previous">previous</button>
-            <button class="btn btn-dark ml-5" id="next">next</button>
-        </div>
-      </div>
-
-     
-     
- 
-     
-
-
-
+    <main>
+        <div class="container jumbotron">
+            
+           <h1 class="display-4"><span id="date"></span></h1>
+           
+           <p class="lead"><span id="temperature"></span></p>
+           <hr class="my-4">
+           <p><span id="wind"></span></p>
+           <p class="lead"><span id="last-update-of-data"></span></p>
+   
+           <div class="col text-center">
+               <button class="btn btn-dark mr-5" id="previous">previous</button>
+               <button class="btn btn-dark ml-5" id="next">next</button>
+           </div>
+         </div>
+    </main>
 
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
