@@ -1,3 +1,5 @@
+
+/* Setting the box-sizing to border-box, and setting the margin and padding to 0px. */
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -5,26 +7,49 @@
 }
 
 
+/* index.html */
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-
-  }
-
-  figcaption {
-    background-color: gary;
-    color: #222;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
+/* Making the image responsive. */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Styling the figcaption element. */
+figcaption {
+  background-color: gary;
+  color: #222;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+
+/* media query */
 @media screen and (max-width:600px) {
   #title {
     font-size: 2em;
   }
 }
+
+/* index.html end */
+
+/* mars weather */
+/* mars weather end */
+
+/* photo on mars */
+.carousel-item img {
+  width: 1000px;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.rover__photo {
+  background-color: darkslategrey;
+}
+
+
+/* photo on mars end */
