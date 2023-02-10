@@ -1,0 +1,19 @@
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+#funFactTitle {
+  font-size: 26px;
+  background-color: rgb(255, 213, 134, 0.25);
+  padding: 10px;
+}
+
+#funFact {
+  font-weight: 700;
+}
+
+#newFactButton:hover {
+  color: rgb(255, 191, 0);
+}
