@@ -42,13 +42,16 @@ figcaption {
 
 /* photo on mars */
 .carousel-item img {
-  width: 1000px;
-  height: 1000px;
+  width: 60vw;
+  max-width: 100%;
+  height: 80vh;
   object-fit: cover;
 }
 
-.rover__photo {
-  background-color: darkslategrey;
+.imgSize {
+  width: 60vw;
+  max-width: 80%;
+  height: auto;
 }
 
 

@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   submitBtn.addEventListener('click', async function() {
+    // clear the submit btn
+
     const selectedDate = datePicker.value;
     const selectedRover = roverSelect.value;
     const API_KEY = "qF7p0U4DXMYwXJZnsf6pmQG2cIJNuVBJWlLvei8X";
@@ -38,30 +40,33 @@ document.addEventListener('DOMContentLoaded', function() {
     data.photos.forEach((photo, index) => {
       const carouselItem = document.createElement('div');
       carouselItem.classList.add('carousel-item');
-  
+    
       if (index === 0) {
         carouselItem.classList.add('active');
       }
-  
+    
       const img = document.createElement('img');
-      img.classList.add('d-block', 'w-80');
+      img.classList.add('d-block', 'w-80', 'imgSize');
       img.src = photo.img_src;
       img.alt = `Mars ${selectedRover} photo on ${datePicker}`;
-  
+    
+      const figCaption = document.createElement('figcaption');
       const cameraInfo = document.createElement('p');
       cameraInfo.innerHTML = `Camera: <a href="${photo.img_src}" target="_blank">${photo.camera.full_name}</a>`;
-  
+      figCaption.appendChild(cameraInfo);
+    
       const roverInfo = document.createElement('p');
       roverInfo.innerHTML = `Rover: ${photo.rover.name} (${photo.rover.status})`;
-  
+      figCaption.appendChild(roverInfo);
+    
       const solInfo = document.createElement('p');
       solInfo.innerHTML = `Sol: ${photo.sol}`;
-  
+      figCaption.appendChild(solInfo);
+    
       carouselItem.appendChild(img);
-      carouselItem.appendChild(cameraInfo);
-      carouselItem.appendChild(roverInfo);
-      carouselItem.appendChild(solInfo);
+      carouselItem.appendChild(figCaption);
       carouselInner.appendChild(carouselItem);
     });
+    
   });
 });
