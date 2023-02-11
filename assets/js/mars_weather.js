@@ -28,8 +28,9 @@ fetch(apiUrl)
 
       document.getElementById('date').innerHTML = date;
       document.getElementById('last-update-of-data').innerHTML = `Last Updated: ${lastUpdated}`;
-      document.getElementById('temperature').innerHTML = `Min: ${temperatureData.mn} &#8451; Max: ${temperatureData.mx} &#8451;`;
-      document.getElementById('wind').innerHTML = `Speed: ${windData.av} m/s`;
+      document.getElementById('temperature_min').innerHTML = `Min: ${temperatureData.mn.toFixed(1)} &#8451;`;
+      document.getElementById('temperature_max').innerHTML = `Max: ${temperatureData.mx.toFixed(1)} &#8451;`;
+      document.getElementById('wind').innerHTML = `Speed: ${windData.av.toFixed(1)} m/s`;
     }
 
     /* Calling the function displayWeatherData() */
