@@ -12,7 +12,7 @@
     
       <header>
         <!-- Bootstrap navbar -->
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Galaxy Explorer</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -21,14 +21,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <!-- move the links on the right -->
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="mars_weather.html">Mars Weather</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="photo_on_mars.html">Mars Photo</a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="photo_on_mars.html">Mars Photo<span class="sr-only">(current)</span></a>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@
           
           
           
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide my-5" data-ride="carousel">
             <div class="carousel-inner container">
               <div class="carousel-item active">
                 <img class="d-block img-fluid" src="https://placehold.co/600x400" alt="First slide">
@@ -87,7 +87,7 @@
             <select id="selected-rover" class="form-control">
               <option value="Curiosity">Curiosity</option>
             </select>
-            <button class="btn btn-primary form-control" id="submit-btn">Submit</button>
+            <button class="btn btn-secondary form-control" id="submit-btn">Submit</button>
           </div>
           
         </div>

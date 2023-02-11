@@ -1,6 +1,8 @@
 // alert('hello');
 // Create a function to retrieve the data from the API
 async function getAPOD() {
+
+    /* The above code is fetching the data from the API and then displaying it on the webpage. */ 
     try {
         const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=qF7p0U4DXMYwXJZnsf6pmQG2cIJNuVBJWlLvei8X`);
         const data = await response.json();
