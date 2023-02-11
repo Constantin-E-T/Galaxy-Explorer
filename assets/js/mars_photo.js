@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     
       const img = document.createElement('img');
-      img.classList.add('d-block', 'w-80', 'imgSize');
+      img.classList.add('d-block', 'imgSize');
       img.src = photo.img_src;
       img.alt = `Mars ${selectedRover} photo on ${datePicker}`;
     

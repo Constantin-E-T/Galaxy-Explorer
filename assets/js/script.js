@@ -55,12 +55,11 @@ async function getAPOD() {
         // Caption the image
         const caption = document.getElementById("header__caption");
         caption.innerHTML = copyRight;
-    
-
-
 
         const modalBody = document.getElementById("modalBody");
         modalBody.innerHTML = description;
+
+
     } catch (error) {
         // Display the error message in a Bootstrap alert
         const alert = `
