@@ -12,7 +12,7 @@ main {
     flex: 1;
   }
 
-div.card {
+/* div.card {
 background-color: #111;
 opacity: 0.6;
 }
@@ -27,14 +27,20 @@ color: #ffff;
 
 .btn-spacing {
     margin: 0 2rem;
+} */
+
+div.container.jumbotron {
+    background-color: #111;
+    opacity: 0.6;
+    }
+
+.white-hr {
+border-color: white;
 }
 
-
-
-
-
+      
 footer {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-  }
+width: 100%;
+bottom: 0;
+position: absolute;
+}
