@@ -4,7 +4,32 @@
     padding: 0px;
 }
 
+body {
+  background-image: url(../images/index-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
 
+main {
+  flex: 1;
+}
+
+/* .jumbotron {
+  color: #111;
+  opacity: 0.6;
+  } */
+
+ .jumbotron:not(figure) {
+  color: #111;
+  opacity: 0.6;
+ }
+
+  .white-hr {
+    border-color: white;
+    }
 
   img {
     display: block;
@@ -28,3 +53,8 @@
     font-size: 2em;
   }
 }
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  }
