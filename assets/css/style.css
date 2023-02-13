@@ -22,10 +22,14 @@ main {
   opacity: 0.6;
   } */
 
- .jumbotron:not(figure) {
+ /* .jumbotron:not(figure) {
   color: #111;
   opacity: 0.6;
- }
+ } */
+
+ /* #header__image {
+  opacity: 1;
+} */
 
   .white-hr {
     border-color: white;
