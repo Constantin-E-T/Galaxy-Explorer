@@ -16,10 +16,19 @@ min-height: 100vh;
 flex-direction: column;
 }
 
+div.container.jumbotron {
+  background-color: #111;
+  opacity: 0.6;
+  }
+  
+
 footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 footer.container {
@@ -76,14 +85,11 @@ figcaption {
 /* index.html end */
 
 /* mars weather */
-body {
-   background-image: url(../images/mars-background.jpeg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   display: flex;
- min-height: 100vh;
- flex-direction: column;
-}
+
+.white-hr {
+  border-color: white;
+   }
+    
 
 /* mars weather end */
 
