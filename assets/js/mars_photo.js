@@ -134,9 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
         link.click();
       });
 
-      
-
-
 
       /* This is appending the img and figcaption elements to the carousel item element, and then
       appending the carousel item element to the carousel inner element. */
