@@ -6,6 +6,16 @@
     padding: 0px;
 }
 /* general styling */
+
+body {
+  background-image: url(../images/mars-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -66,6 +76,15 @@ figcaption {
 /* index.html end */
 
 /* mars weather */
+body {
+   background-image: url(../images/mars-background.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+
 /* mars weather end */
 
 /* photo on mars */
