@@ -1,9 +1,5 @@
 /* This is a JavaScript function that is executed when the DOM is loaded. */
 document.addEventListener("DOMContentLoaded", function () {
-  /* This is selecting the modal element from the DOM. */
-  const modal = document.querySelector("#fun-fact-modal");
-  /* This is selecting the close button from the DOM. */
-  const closeBtn = document.querySelector(".close");
   /* This is selecting the date picker element from the DOM. */
   const datePicker = document.querySelector("#selected-date");
   /* This is selecting the rover select element from the DOM. */
@@ -13,12 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   /* This is selecting the carousel inner element from the DOM. */
   const carouselInner = document.querySelector(".carousel-inner");
 
-  /* This is checking to see if the user has visited the site before. If they have not, the modal will
-  be displayed. If they have, the modal will not be displayed. */
-  if (!localStorage.getItem("visited")) {
-    modal.style.display = "block";
-    localStorage.setItem("visited", true);
-  }
 
   submitBtn.addEventListener("click", async function () {
     // clear the submit btn
@@ -47,10 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
       alert.innerHTML = `No photos available for ${selectedDate}`;
       carouselInner.appendChild(alert);
     } else {
-      $("#photoCount").text(`${data.photos.length} photos available for ${selectedDate}`);
+      $("#photoCount").text(
+        `${data.photos.length} photos available for ${selectedDate}`
+      );
       $("#photoCountModal").modal("show");
     }
-    
 
     /* This is a forEach loop that is looping through the data.photos array. For each item in the
     array,creating a carousel item div, adding the carousel item class to it, and adding the active class
@@ -96,17 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
       /* Create a download button */
       const downloadButton = document.createElement("button");
       downloadButton.innerHTML = "Download";
-      downloadButton.classList.add('btn', 'btn-secondary', 'mx-5')
+      downloadButton.classList.add("btn", "btn-secondary", "mx-5");
       figCaption.appendChild(downloadButton);
 
       /* Add an event listener to the button that triggers the download of the image */
-      downloadButton.addEventListener("click", function() {
+      downloadButton.addEventListener("click", function () {
         const link = document.createElement("a");
         link.href = photo.img_src;
         link.download = `Mars ${selectedRover} ${photo.sol}`;
         link.click();
       });
-
 
       /* This is appending the img and figcaption elements to the carousel item element, and then
       appending the carousel item element to the carousel inner element. */
