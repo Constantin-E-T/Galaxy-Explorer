@@ -2,7 +2,7 @@
 var teamMembers = [
     { name: "Constantin E. Tivlica", github: "https://github.com/Constantin-E-T" },
     { name: "Kasia Drzewiecka", github: "https://github.com/Drzazga88" },
-    { name: "Eleftherie Ntispyraki", github: "https://github.com/EleNtis" },
+    { name: "Eleftheria Ntispyraki", github: "https://github.com/EleNtis" },
     { name: "Floella Otudeko", github: "https://github.com/ellaflo" }
   ];
   
