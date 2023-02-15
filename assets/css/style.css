@@ -122,20 +122,22 @@ img {
 /* photo on mars end */
 
 /* Fun Fact Generator styling */
-.card {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
+.card-text{
+  font-size: 20px;
+  color: black;
 }
 
 #funFactTitle {
   font-size: 26px;
-  background-color: rgb(255, 213, 134, 0.25);
+  background-color: rgba(247, 247, 247, 0.25);
   padding: 10px;
+  color: white;
 }
 
 #funFact {
   font-weight: 700;
+  color: rgb(228, 229, 229);
+  font-style: oblique;
 }
 
 #newFactButton:hover {
@@ -143,3 +145,4 @@ img {
 }
 
 /* end of fun fact generator styling */
+
