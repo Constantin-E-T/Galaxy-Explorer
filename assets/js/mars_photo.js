@@ -20,33 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("visited", true);
   }
 
-  /* This is checking to see if the user has visited the site before. If they have not, the modal will
-    be displayed. If they have, the modal will not be displayed. */
-  let userName = localStorage.getItem("userName");
-
-  if (!userName) {
-    userName = prompt("Hi! What's your name?");
-    localStorage.setItem("userName", userName);
-    alert(`Hi, ${userName}! Thanks for visiting for the first time.`);
-  } else {
-    alert(
-      `Welcome back, ${userName}! Here's some new information about Mars, rovers, and NASA:`
-    );
-
-    let randomFact = facts[Math.floor(Math.random() * facts.length)];
-
-    $("#factTitle").text(randomFact.title);
-    $("#factText").text(randomFact.text);
-
-    $("#greetUser").modal("show");
-  }
-
-  /* This is an event listener that is listening for a click event on the close button. When the close
-  button is clicked, the modal is hidden. */
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
   submitBtn.addEventListener("click", async function () {
     // clear the submit btn
 
