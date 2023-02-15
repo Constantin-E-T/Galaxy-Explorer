@@ -56,6 +56,12 @@ footer a:hover {
 
 /* index.html */
 
+/* Styling the logo */
+
+.logo {
+    max-width: 15%;
+      }
+
 /* Making the image responsive. */
 img {
   display: block;
