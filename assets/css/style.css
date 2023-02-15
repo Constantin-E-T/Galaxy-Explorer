@@ -23,8 +23,7 @@ div.container.jumbotron {
 
   div.container.jumbotron h1, p {
     color: #fff;
-    font-size: 3em;
-    text-align: center;
+    
   }
 
   #header__caption {
