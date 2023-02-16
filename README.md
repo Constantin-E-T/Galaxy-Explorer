@@ -19,7 +19,6 @@ Checkout the live demo [@GalaxyExplorer]() and start your journey to the Univers
 * [Screenshots](#screenshots)
 * [Authors](#authors)
 * [Skills](#skills)
-* [Stack](#stack)
 * [License](#license)
 
 
