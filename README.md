@@ -57,9 +57,9 @@ Checkout the live demo [@GalaxyExplorer]() and start your journey to the Univers
 
 This is a team project, developed by Constantine E. Tivlica, Kasia Drzewiecka, Eleftheria Ntispyraki and Floella Otudeko.
 
-* [@Constantin-Emilian Tivlica](https://github.com/Constantin-E-T/)
-* [@Drzazga88](https://github.com/Drzazga88)
-* [@EleNtis](https://github.com/EleNtis)
+* [Constantin-Emilian Tivlica](https://github.com/Constantin-E-T/)
+* [Drzazga88](https://github.com/Drzazga88)
+* [EleNtis](https://github.com/EleNtis)
 * [ellaflo](https://github.com/ellaflo)
 
 
