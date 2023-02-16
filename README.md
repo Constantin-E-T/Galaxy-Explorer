@@ -35,7 +35,6 @@ Checkout the live demo [@GalaxyExplorer]() and start your journey to the Univers
 
 ![Alt text](assets/images/screencapture-Galaxy-Explorer-index-html.png)
 
-![Alt text](assets/images/Screencapture-Galaxy-Explorer-Mars-Weather-html.png)
 
 
 ## Usage
