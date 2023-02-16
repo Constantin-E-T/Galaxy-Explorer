@@ -35,7 +35,9 @@ Checkout the live demo [@GalaxyExplorer](https://constantin-e-t.github.io/Galaxy
 
 ![Alt text](assets/images/screencapture-Galaxy-Explorer-index-html.png)
 
+![Alt text](assets/images/screencapture%20-Mars-Weather-html.png)
 
+![Alt text](assets/images/screencapture-Mars-photo-html.png)
 
 ## Usage
 
