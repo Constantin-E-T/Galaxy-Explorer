@@ -10,7 +10,7 @@ Galaxy Explorer is a comprehensive space exploration app that provides users wit
 
 ## Deployed Website
 
-Checkout the live demo [@GalaxyExplorer]() and start your journey to the Universe!
+Checkout the live demo [@GalaxyExplorer](https://constantin-e-t.github.io/Galaxy-Explorer/) and start your journey to the Universe!
 
 
 ## Contents
@@ -35,7 +35,9 @@ Checkout the live demo [@GalaxyExplorer]() and start your journey to the Univers
 
 ![Alt text](assets/images/screencapture-Galaxy-Explorer-index-html.png)
 
+![Alt text](assets/images/screencapture%20-Mars-Weather-html.png)
 
+![Alt text](assets/images/screencapture-Mars-photo-html.png)
 
 ## Usage
 
